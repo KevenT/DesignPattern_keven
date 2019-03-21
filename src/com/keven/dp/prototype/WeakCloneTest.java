@@ -5,7 +5,8 @@ import java.io.IOException;
 /** 
 * @author Keven  Email:tv2014@126.com
 * @version 创建时间：2019年3月20日 下午1:19:57 
-* 说明 :将一个对象复制后，基本数据类型的变量都会重新创建，而引用类型，指向的还是原对象所指向的。
+* 说明 :原型模式
+* 将一个对象复制后，基本数据类型的变量都会重新创建，而引用类型，指向的还是原对象所指向的。
 */
 public class WeakCloneTest {
 
