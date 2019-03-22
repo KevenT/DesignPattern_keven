@@ -7,12 +7,20 @@ public abstract class AbstractSubject implements Subject{
 	private Vector<Observer> vector = new Vector<Observer>();
 	@Override
 	public void add(Observer observer){
-		vector.add(observer);
+		if (vector.contains(observer)) {
+			System.out.println("已经添加了，无序重复添加");
+		}else{
+			vector.add(observer);
+		}
 	}
 	
 	@Override
 	public void del(Observer observer){
-		vector.remove(observer);
+		if (vector.contains(observer)) {
+			vector.remove(observer);
+		}else{
+			System.out.println("已经不在列表中了，无序重复删除");
+		}
 	}
 	
 	@Override
